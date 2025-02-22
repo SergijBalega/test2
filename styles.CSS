@@ -70,7 +70,7 @@ img{
     border: 1px solid white;
     border-radius: 10px;
     background: #ffffff40;
-    color: black;
+    color:#ffff;
 }
 
 /* Кнопка */
@@ -89,7 +89,7 @@ transition: all 0.3s ease;
 }
 
 .hed__btn-1:hover{
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.3);
     color: white;
 }
 
@@ -237,7 +237,7 @@ transition: all 0.3s ease;
 }
 
 .button2:hover {
-    background: rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
 }
 
@@ -325,7 +325,7 @@ margin-top: 38px;
 }
 
 .button3:hover{
-    background-color: #000;
+    background-color:rgba(0, 0, 0, 0.5);
     color: #F5EDE7;
 }
 
@@ -379,7 +379,7 @@ color: rgba(0, 0, 1);
     }
     
     .section__fres__btn--btn:hover {
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.5);
         color: #F5EDE7;
     }
 
@@ -452,7 +452,7 @@ color: rgba(0, 0, 1);
         }
     
         .section-4__grid__bloc--btn:hover {
-            background-color: #000;
+            background-color: rgba(0, 0, 0, 0.5);
             color: #F5EDE7;
             border-color: #000;
         }
@@ -465,6 +465,7 @@ color: rgba(0, 0, 1);
 
 .section5__img {
     width: 100%;
+    max-width: 1440px;
 }
 
 .flex {
@@ -472,7 +473,7 @@ color: rgba(0, 0, 1);
     justify-content: center;
     align-items: flex-start; /* Вирівнювання по верхньому краю */
     gap: 20px; /* Відстань між блоками */
-    flex-wrap: wrap; /* Адаптивність для мобільних */
+     /* Адаптиflex-wrap: wrap;вність для мобільних */
 }
 
 .flex__section5__img {
@@ -627,7 +628,7 @@ color: rgba(0, 0, 1);
 .san1 {
     position: absolute;
     bottom: 0;
-    left: 28%;
+    left: 43%;
     width: 100%;
     max-width: 400px;
     z-index: 2;
@@ -782,3 +783,6 @@ padding-top: 46px;
         top: 59.98px;
 
 }
+ .bacraund-futer{
+    background-color: rgba(245, 237, 231, 1);
+ }
