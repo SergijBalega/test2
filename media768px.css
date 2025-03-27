@@ -1,0 +1,312 @@
+@media (max-width: 768px){
+:root {
+    --family-DM-sans: "DM Sans", sans-serif;
+    --family-Roboto: Roboto, sans-serif;
+    /* голова */
+    --font-size-14px: 11px;
+    /*інпут копки пошук*/
+    --font-size-11: 9px;
+    --font-size-16: 13px;
+    --font-size-17: 14px;
+    --font-size-18: 15px;
+    --font-size-20: 17px;
+    --font-size-22: 19px;
+    --font-size-28: 25px;
+    --font-size-27: 24px;
+    --font-size-26: 23px;
+    --font-size-30: 27px;
+    --font-size-31: 28px;
+    --font-size-39: 36px;
+    --font-size-40: 30px;
+    --font-size-43: 40px;
+    --font-size-50: 47px;
+    --font-size-54: 51px;
+    --font-size-76: 73px;
+    --font-size-78: 75px;
+}
+
+/* Footer */
+.hed {
+    max-width: 768px;
+   height: 77px;
+}
+/* Форма */
+.hed__form input {
+    width: 150px;
+    height: 45px;
+    padding-left: 15px;
+}
+
+/* Кнопки */
+.btn {
+    min-width: 92px;
+    height: 45px;
+    margin-right: 90px;
+}
+
+.button--shop {
+    min-width: 210px;
+    height: 48px;
+    margin-top: 20px;
+}
+
+
+
+.conteinar {
+    height: 69px;
+}
+
+
+
+.conteinar__left img {
+    width: 138px;
+    height: 63px;
+}
+
+/* Блок з іконками справа */
+.velcom {
+    margin-left: 20px;
+    margin-right: 5px;
+    gap: 10px;
+}
+
+.velcom a {
+    font-family: var(--family-DM-sans);
+    font-size: var(--font-size-18);
+    line-height: 28.01px;
+}
+
+.velcom i {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+/* секція-1 */
+.section {
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.section__heder {
+    max-width: 432px;
+    /* max-height: 533px; */
+    height: auto;
+}
+
+.section__heder h2 {
+    line-height: 80px;
+    margin-top: 1px;
+}
+
+.section__heder p {
+    margin-top: 15px;
+}
+/* Картинка */
+.img img{
+ max-width: 100%;
+object-fit: cover;
+}
+
+
+/* Секція 2 */
+
+
+.section2 h2 {
+    margin-top: 32px;
+}
+
+.section2__menu {
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.section2__menu--1 {
+    width: 100%;
+    max-width: 134px;
+    min-height: 151px;
+    margin-top: 10px;
+}
+
+.section2__menu--1 h3 {
+    margin-top: 6px;
+}
+
+/* секція 3 */
+.section__fres {
+    width: 100%;
+    max-width: 350.98px;
+  min-height: 200px;
+    margin-left: 25px;
+    margin-top: 40px;
+}
+
+.section__img img {
+    max-width: 340px;
+    min-height: 410px;
+}
+/* Секція 4 */
+.section-4 {
+    margin: 0 auto 20px auto;
+}
+
+.section-4 h3 {
+    margin-top: 70px;
+}
+
+
+
+.section-4__grid__blocc {
+    width: 100%;
+    max-width: 253px;
+    height: 253px;
+}
+
+/* Кнопка */
+.button--add {
+    max-width: 147px;
+    height: 38px;
+}
+
+/* Секція5 */
+.bacraund-wit {
+    padding-top: 30px;
+}
+
+/* .section5__img img {
+height: 100%;
+    max-width: 159px;
+    min-height: 130px;
+} */
+
+.section5 {
+    padding: 10px;
+}
+
+.flex {
+    gap: 10px;
+}
+
+.flex__section5__img {
+    max-width: 459px;
+    min-height: 630px;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+
+.flex__section5__img img {
+    max-width: 250px;
+    height: 132px;
+}
+
+.flex__section5__img h3 {
+    line-height: 50px;
+}
+
+/* Cекція 6 */
+.border-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+    min-height: 442px;
+}
+
+.conteqyth-6 {
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.conteqyth-6 h5 {
+    padding-bottom: 25px;
+}
+
+.conteiner-6-tex h5 {
+    padding-top: 15px;
+}
+.conteqyth-6__too {
+    padding-bottom: 15px;
+}
+
+/* розміри для котейнерів 6/1 та 6/2 */
+.conttiner-6-img,
+.conteiner-6-tex {
+    /* width: 100%; */
+    max-width: 355px;
+    min-height: 180px;
+
+}
+
+
+.conteiner-6-tex--too,
+.conttiner-6-img {
+    width: 100%;
+    max-width: 355px;
+    min-height: 355px;
+}
+
+.san {
+    max-width: 200px;
+    max-height: 200px;
+ 
+}
+
+/* Кнопка */
+.button.button--read {
+    min-width: 150px;
+    height: 48px;
+}
+
+/* Секція 7 */
+.section7 {
+    margin-top: 40px;
+}
+
+.section7__flex {
+    gap: 20px;
+    cursor: grab;
+    margin-top: 10px;
+}
+
+.section7__flex__img {
+min-width: 236px;
+    min-height: 136px;
+}
+
+/* секція 8 */
+.section-8 {
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.section-8 h2 {
+    line-height: 52px;
+}
+
+.section-8 h4 {
+    line-height: 40px;
+    margin-top: 10px;
+}
+
+.button__poshta {
+    min-width: 250px;
+    height: 48px;
+}
+/* ЗЕ ЕНД)))) */
+
+.footer2 {
+    padding-top: 26px;
+    padding-right: 35px;
+}
+.footer-contunt1-img img {
+    max-width: 200px;
+
+}
+
+.Bbagraund--end {
+    font-family: var(--family-DM-sans);
+    font-size: var(--font-size-14px);
+    line-height: 24px;
+    letter-spacing: 0%;
+    padding-top: 50px;
+    padding-left: 50px;
+
+}
+}

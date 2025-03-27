@@ -23,7 +23,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.CSS" />
+    <link rel="stylesheet" href="./styles.css" />
+    
+    <link rel="stylesheet" href="./media768px.css">
+       <link rel="stylesheet" href="./576px-media.css">
+ 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
@@ -39,22 +43,23 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></head>
   </head>
   <body>
+    <div class="Bbagraund">
     <div class="hed">
       <div class="hed__left">
         <h4>
           We're focusing on London to start with, please enter your post code
           here to see if you're within our delivery zone!
         </h4>
-
-        <div class="hed__form">
+<div class="hed__form hed__form--top ">
+        <div class=" hed__form">
           <form action="">
-            <input type="text" name="text" placeholder="Post code" />
+            <input  type="text" name="text" placeholder="Post code" />
           </form>
         </div>
 
-        <button class="hed__btn-1">Check</button>
+        <button class="btn btn__Check">Check</button>
       </div>
-
+      </div>
       <!-- Іконка справа -->
       <i class="fa-regular fa-circle-xmark"></i>
     </div>
@@ -65,46 +70,47 @@
         <img src="./img/loggo.jpg" alt="" />
         <div class="conteinar__link">
           <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Who is Tarla?</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">OUR STORY</a></li>
+            <li><a href="#">WHO IS TARLA?</a></li>
           </ul>
         </div>
       </div>
 
       <!-- ПРАВА СТОРОНА: Log in + Cart -->
-      <div class="conteinar__velcom">
-        <div class="conteinar__velcom--1">
-          <i class="fa-regular fa-user"></i>
-          <ul>
+      <div class="velcom">
+    <div class="velcom__log">
+        <i class="fa-regular fa-user"></i>
+        <ul>
             <li><a href="#">Log in</a></li>
-          </ul>
-        </div>
-        <div class="conteinar__velcom--1">
-          <i class="fa-solid fa-bag-shopping"></i>
-          <ul>
+        </ul>
+    </div>
+    <div class="velcom__cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <ul>
             <li><a href="#">Cart</a></li>
-          </ul>
-        </div>
-      </div>
+        </ul>
+    </div>
+</div>
+
     </div>
     <!-- Секція 1 -->
     <section>
       <div class="section">
         <div class="section__heder">
-          <h1>Fresh</h1>
+          <h2>Fresh</h2>
 
-          <h2>pastry kits</h2>
+          <h2 class="section__heder--h2">pastry kits</h2>
           <p>
             Bringing the smells and tastes of your favourite patisserie to your
             home. Our kits have everything you need to easily make killer
             pastries every time. We’ve done the tricky bits so all you need to
             do is roll, proof and bake!
           </p>
-          <button class="button2">Shop pastry kits</button>
+          <button class="button button--shop">Shop pastry kits</button>
         </div>
         <div class="img">
-          <img src="./img/Frame (1).png" alt="" />
+          <img src="./img/frame (1).png" alt="" />
         </div>
       </div>
     </section>
@@ -117,7 +123,7 @@
           <div class="section2__menu">
             <div class="section2__menu--1">
               <div class="section2__menu--img">
-                <img src="./img/віконко-круасана.png" alt="Круасан" />
+                <img src="./img/croissant-window.png" alt="Круасан" />
               </div>
               <h3>CHOOSE YOUR <span>FAVE</span></h3>
               <p>
@@ -128,7 +134,7 @@
 
             <div class="section2__menu--1">
               <div class="section2__menu--img">
-                <img src="./img//віконко-дзвоник.png" alt="Дзвоник" />
+                <img src="./img/bell-window.png" alt="Дзвоник" />
               </div>
               <h3>DING <span>DONG</span></h3>
               <p>
@@ -139,7 +145,7 @@
 
             <div class="section2__menu--1">
               <div class="section2__menu--img">
-                <img src="./img//віконко-піч.png" alt="Піч" />
+                <img src="./img//stove-window.png" alt="Піч" />
               </div>
               <h3>GET<span>BAKED</span></h3>
               <p>
@@ -150,7 +156,8 @@
 
             <div class="section2__menu--1">
               <div class="section2__menu--img">
-                <img src="./img//віконко-любов.png" alt="Любов" />
+                <img src="./img/
+window-love.png" alt="Любов" />
               </div>
               <h3>TAKE THE<span>CREDIT</span></h3>
               <p>
@@ -159,7 +166,7 @@
               </p>
             </div>
           </div>
-          <button class="button3">Shop pastry kits</button>
+          <button class="button button--shop-blu">Shop pastry kits</button>
         </div>
       </section>
 
@@ -167,7 +174,7 @@
       <section>
         <div class="section3">
           <div class="section__img">
-            <img src="./img/фото1-хлібф.png" alt="Хліб" />
+            <img src="./img/photo1-khlibf.png" alt="Хліб" />
           </div>
           <div class="section__fres">
             <h3>
@@ -176,7 +183,7 @@
               your PJs.
             </h3>
             <div class="section__fres__btn">
-              <button class="section__fres__btn--btn">Shop pastry kits</button>
+              <button class="button button--shop-blu">Shop pastry kits</button>
             </div>
           </div>
         </div>
@@ -189,8 +196,8 @@
 
           <div class="section-4__grid">
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-1.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-1.png" alt="" />
               </div>
               <h4>
                 All-BUTTER
@@ -198,12 +205,12 @@
                 CROISSANT
               </h4>
               <p>KIT OF 6- &pound;12</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
 
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-2.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-2.png" alt="" />
               </div>
               <h4>
                 ALMOND
@@ -211,12 +218,12 @@
                 CROISSANT
               </h4>
               <p>KIT OF 6- &pound;13.50</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
 
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-3.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-3.png" alt="" />
               </div>
               <h4>
                 RASPBERRY
@@ -224,12 +231,12 @@
                 DANISH
               </h4>
               <p>KIT OF 6- &pound;13.50</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
 
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-4.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-4.png" alt="" />
               </div>
               <h4>
                 PAIN AUX
@@ -237,12 +244,12 @@
                 RAISINS
               </h4>
               <p>KIT OF 6- &pound;13.50</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
 
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-5.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-5.png" alt="" />
               </div>
               <h4>
                 APRICOT
@@ -250,12 +257,12 @@
                 DANISH
               </h4>
               <p>KIT OF 6- &pound;13.50</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
 
             <div class="section-4__grid__bloc">
-              <div class="section-4__grid__bloc--img">
-                <img src="./img/section-4/круасан-grid-6.png" alt="" />
+              <div class="section-4__grid__blocc">
+                <img src="./img/section-4/croissant-grid-6.png" alt="" />
               </div>
               <h4>
                 PAIN AU
@@ -263,20 +270,20 @@
                 CHOCOLAT
               </h4>
               <p>KIT OF 6- &pound;13.50</p>
-              <button class="section-4__grid__bloc--btn">Add to cart</button>
+              <button class="button button--add">Add to cart</button>
             </div>
           </div>
         </div>
       </section>
     </div>
     <!-- Секція 5 -->
-    <section>
-      
-      <div class="border-2">
+  
+     <section>
+      <div class="bacraund-wit">
+    
+     
         <div class="section5">
-          <div class="section5__img">
-            <img src="./img/section-5/grid-1.png" alt="" />
-          </div>
+          
           <div class="flex">
             <div class="flex__section5__img">
               <img src="./img/section-5/grid-2.png" alt="" />
@@ -320,63 +327,64 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Секція 6 -->
+   <section>
+    <div class="border-3">
+      <div class="san san__top">
+                <img src="./img/section-6/sun-top.png" alt="">
+            </div>
+        <!-- Секція 6/1 -->
+        <div class="conteqyth-6">
+            <div class="conttiner-6-img">
+                <img src="./img/section-6/section-6.1.png" alt="">
+            </div>
+            
+            <div class="conteiner-6-tex">
+                <h5>AMAZING INGREDIENTS</h5>
+                <p>
+                    We like to keep things simple and authentic. We’ve sourced the
+                    very best from the very best, from our Poitou-Charentes butter
+                    to our Valrhona chocolate batons.
+                </p>
+                <button class="button button--read">Read more</button>
+            </div>
+        </div>
+
+        <!-- Секція 6/2 -->
+        <div class="conteqyth-6 conteqyth-6__too">
+            <div class="conteiner-6-tex--too">
+                <h5>AMAZING INGREDIENTS</h5>
+                <p>
+                    The inspiration for our brand and our guiding principles is the Legend of El Tarlà. 
+                    A young man who brought joy to the isolated citizens of Girona during an outbreak of the plague.
+                </p>
+                <button class="button button--read">Read more</button>
+            </div>
+            
+            <div class="conttiner-6-img">
+                <img src="./img/section-6/section-6.2.png" alt="">
+            </div>
+        </div>
+        <div class="san san__down">
+                <img src="./img/section-6/sun-down.png" alt="">
+            </div>
+    </div>
+</section>
+
+
+
+    <!-- Секція 7-->
+    
     <section>
-      <div class="border-3">
-      <div class="section-6-background">
-        <div class="san">
-          <img src="./img/section-6/сонце-верх.png" alt="">
-        </div>
-        <div class="section-6-background__block1">
-          <div class="section-6-background__block1__img">
-            <div class="section-6-background__block1__img--img">
-              <img src="./img/section-6/секція-6,1.png" alt="" />
-            </div>
-            <div class="section-6-background__block1__img--texst">
-              <h5>AMAZING INGREDIENTS</h5>
-              <p>
-                We like to keep things simple and authentic. We’ve sourced the
-                very best from the very best, from our Poitou-Charentes butter
-                to our Valrhona chocolate batons.
-              </p>
-              <button class="section-6-background__block1__btn">Read more</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-6-background__block1__img">
-            <div class="marc">
-            <div class="section-6-background__block1__img--text">
-              <h5>AMAZING INGREDIENTS</h5>
-              <p>
-                The inspiration for our brand and our guiding principles is the Legend of El Tarlà. A young man who brought joy to the isolated citizens of Girona during an outbreak of the plague.
-              </p>
-              <button class="section-6-background__block1__btn">Read more</button>
-            </div>
-            </div>
-            <div class="section-6-background__block1__img--img1">
-              <img src="./img/section-6/секція-6,2.png" alt="" />
-            </div>
-          </div>
-          <div class="san1">
-            <img src="./img/section-6/сонце-низ.png" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Секція 7 -->
-     <section>
       <div class="section7">
         <h4>
           @tarlabakes
         </h4>
         <div class="section7__flex">
         <div class="section7__flex__img">
-<img src="https://s3-alpha-sig.figma.com/img/b0bf/0e1e/fcd2b2db503b01d6025a41653a3e7a42?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GXCO6ybAqVuDAkXrNx2SAdt~Mk30kWHTI6RN69hmoMOsO3pbGJPXRUCVKSSx6r4ocx9sns9i1Jx0KlnBCwKFi5BqWmCigEzETykeXSqvi5LnfaRwK79LJIYYSJZ7P6na2nPuZEcwYgKU7-mrq6OSOI5uBGk1DplBS7ClgsO1yEs9xFjkp-IGOmGM8YYXfGSK~zZBhfHokmiHKJ0YLqiVv5DgyUVUZuhbOFrDRAppPvtC7q~HSb0bWU5RAH2hBZ3mAtrCsCVK~b~9-eGnruy-HJxe4hROyVBRIaAWA65yj5LOalvlEX6YweAc-R94ThEcrw9~aEebN3eT44fO72bBkw__" alt="">
+<img src="./img/section-7/Rectangle-1.png" alt="">
         </div>
         <div class="section7__flex__img">
 <img src="./img/section-7/Rectangle-2.png" alt="">
@@ -388,52 +396,58 @@
 <img src="./img/section-7/Rectangle-4.png" alt="">
         </div>
         <div class="section7__flex__img">
-<img src="https://s3-alpha-sig.figma.com/img/e2c0/df5a/b9bf4d11e93818604e4eba0afc4184d7?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=dTHmiHKYxdMxZZcllJb6f727ymRP0uNNQVyzz4i7FMP3L69WENsJbUIAYn1cXVbnmeG69tCH2KJaFHKdCGsGi88OcvH-Bz6T0cyUzvASytTHK1FHI3-iE9ff0ixlzMl7pdDfPLgngqNrgbWjijnH0lgHrBPkFU9w4-deTG3Jp6tlE6oJtY2JPZVdhrGmRunDzk7xNpisxokzJ-iotSamegSQxhywDiHMeAMih-FmpQoQpaYrsi2jT8sk9AstsYByYzLzzeS2zjFzXdveXEcX9JPD68fBbXpbnmWqGBu2Np3DRYaWj7t91SYaFOqvQn32cbCqtqFvY0ni6b4DmYs0uQ__" alt="">
+          <img src="./img/section-7/Rectangle-5.png" alt="">
         </div>
         </div>
       </div>
      </section>
+     </div>
      <!-- Секція 8 -->
 <section>
   <div class="section-8">
     <h2>JOIN OUR COMMUNITY</h2>
     <h4>and let's get baked</h4>
-    <button>oven@180degrees.com</button>
+    <button class="button button__poshta">oven@180degrees.com</button>
   </div>
-</section>
+</section> 
 
 <!-- ЗЕ ЕНД))) -->
 <footer>
-  <div class="bacraund-futer">
-  <div class="footer">
-    <div class="footer__contunt1-img">
+  <div class="footer2">
+    <div class="footer-contunt1-img">
         <img src="./img/loggo.jpg" alt="">
     </div>
-    <div class="footer__contunt1">
+    <div class="footer footer--post">
       <h5>Account</h5>
-      <p>Sign Up</p>
-      <p>Log In</p>
+      <ul>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Log In</a></li>
+      </ul>
     </div>
-    <div class="footer__contunt1">
+    <div class="footer footer--post">
       <h5>Our company</h5>
-      <p>SHOP</p>
-      <P>OUR STORY</P>
-      WHO IS TARLA
+      <ul>
+      <li><li><a href="#">SHOP</p></li>
+      <li><li><a href="#">OUR STORY</a></li>
+      <li><li><a href="">WHO IS TARLA</a></li>
+      </ul>
     </div>
     
-    <div class="footer__contunt1">
+    <div class="footer footer--post">
       <h5>Resources</h5>
-      <p>FAQ</p>
-      <P>CONTACT</P>
-      <P>BECOME AN INFLUENCER</P>
-      <P>PRIVACY POLICY</P>
-      <P>TERMS OF SERVICE</P>
-      REFUND POLICY
+      <ul>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">BECOME AN INFLUENCER</a></li>
+      <li><a href="#">PRIVACY POLICY</a></li>
+      <li><a href="#">TERMS OF SERVICE</a></li>
+     <a href=""> REFUND POLICY</a></li>
+     </ul>
     </div>
 
-    <div class="footer__contunt1">
+    <div class="footer footer--post">
       <a href="#">@tarlabakes</a>
-      <div class="footer__contunt1--i">
+      <div class="contunt1-i">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
 <a href="#"><i class="fab fa-instagram"></i></a>
 <a href="#"><i class="fab fa-twitter"></i></a>
@@ -441,11 +455,15 @@
 <a href="#"><i class="fa-brands fa-spotify"></i></a>
       </div>
     </div>
+    
   </div>
-  </div>
+  
 </footer>
-
+<div class="Bbagraund Bbagraund--end">©2021</div>
 
    <script src="./script.js"></script>
+   
+   </div>
+   
   </body>
 </html>

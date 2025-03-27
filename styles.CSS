@@ -14,8 +14,11 @@ width: 100%;
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Roboto', 'DM Sans', 'IBM Plex Mono', 'Black Han Sans', sans-serif;
-    /* line-height: 1.6; */
+    font-weight: 400;
    
+}
+h1, h2, h3, h4, p {
+color: rgba(0, 0, 0, 1);
 }
 
 ul{
@@ -24,12 +27,19 @@ ul{
 
 a {
     text-decoration: none;
-    color: black;
+    color:rgba(0, 0, 0, 1);
+font-family: var(--family-DM-sans);
 }
 
+  a:hover {
+      background-color: rgba(0, 0, 0, 0.35);
+      color: rgb(72, 112, 112);
+  }
+
 img{
-    max-width:100%;
-    max-height: 100%;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
     
 }
 
@@ -37,8 +47,35 @@ img{
     background-color: rgba(245, 237, 231, 1);
 }
 
+:root {
+    --family-DM-sans: "DM Sans", sans-serif;
+    --family-Roboto: Roboto, sans-serif;
+    /* голова */
+    --font-size-14px: 14px;
+    /*інпут копки пошук*/
+    --font-size-11: 11px;
+    --font-size-16: 16px;
+    --font-size-17: 17px;
+    --font-size-18: 18px;
+    --font-size-20: 20px;
+    --font-size-22: 22px;
+    --font-size-28: 28px;
+    --font-size-27: 27px;
+    --font-size-26: 26px;
+    --font-size-30: 30px;
+    --font-size-31: 31px;
+    --font-size-39: 39px;
+    --font-size-40: 40px;
+    --font-size-43: 43px;
+    --font-size-50: 50px;
+    --font-size-54: 54px;
+    --font-size-76: 76px;
+    --font-size-78: 78px;
+}
 
+/* Footer */
 .hed {
+    max-width: 1440px;
     background-color: #0126de;
     display: flex;
     justify-content: flex-end;
@@ -50,16 +87,18 @@ img{
     display: flex;
     align-items:center;
     gap: 9px;
-
+}
+.hed__form{
+    display: flex;
 }
 
 /* Текст */
 .hed h4 {
+    
     /* margin-left: 223px; */
-    max-width: 100%;
-    font-size: 14px;
-    color: white;
-    font-weight: 400;
+    text-align: center;
+    font-size: var(--font-size-14px);
+    color: rgba(255, 255, 255, 1);
 }
 
 /* Форма */
@@ -67,38 +106,75 @@ img{
     width: 150px;
     height: 45px;
     padding-left: 15px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 10px;
-    background: #ffffff40;
-    color:#ffff;
+    background-color: rgba(255, 255, 255, 0.25);
+    font-family: var(--family-Roboto);
+    font-size: var(--font-size-11);
+    line-height: 16.1px;
+    color:rgba(0, 0, 0, 0.35);
 }
 
-/* Кнопка */
-.hed__btn-1 {
-    width: 92px;
+.hed__form input::placeholder {
+    color:rgba(0, 0, 0, 0.35);
+    opacity: 1;
+}
+
+
+
+/* Кнопки */
+.btn {
+    min-width: 92px;
     height: 45px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 20px;
     background:white;
     color: rgba(0, 0, 0, 1);
     cursor: pointer;
-    font-size: 11px;
+    font-size: var(--font-size-11);
     margin-right: 194px;
     cursor: pointer;
 transition: all 0.3s ease;
 }
-
-.hed__btn-1:hover{
-    background: rgba(0, 0, 0, 0.3);
+.btn:hover {
+    background: rgba(0, 0, 0, 0.5);
     color: white;
 }
+
+.button--shop {
+    min-width: 310px;
+    height: 58px;
+    margin-top: 20px;
+}
+
+
+.button {
+    border-radius: 35px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    font-family: var(--family-Roboto);
+    font-size: var(--font-size-22);
+    line-height: 34px;
+    color: rgba(0, 0, 0, 1);
+    background: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+  
+.button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
 
 /* Іконка */
 .hed i {
     margin-top: 15px;
     margin-right: 6px;
-    font-size: 28px;
-    color: white;
+    margin-left: auto;
+    font-size: var(--font-size-28);
+    color:black;
+    font-weight: 300;
     cursor: pointer;
 }
 
@@ -107,11 +183,9 @@ transition: all 0.3s ease;
     align-items: flex-end;   
     justify-content: space-between;
     height: 89px;
-    background-color: #F5EDE7;
-    font-family: 'Roboto';
+    font-family:var(--family-Roboto);
     padding: 0 20px;
     border-bottom: 1px solid #000 ;
-    /* Відступи з боків */
 }
 
 .conteinar__left {
@@ -128,8 +202,7 @@ transition: all 0.3s ease;
 /* Налаштування для меню */
 .conteinar__link ul {
     display: flex;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--font-size-16);
     margin-bottom: 5px;
     gap: 20px;
 }
@@ -137,115 +210,86 @@ transition: all 0.3s ease;
 .conteinar__link ul li {
     word-spacing: 5px;
     margin-left: 10px;
-    
-   
-    /* Відступи між пунктами меню */
 }
 
 /* Блок з іконками справа */
-.conteinar__velcom {
+.velcom {
     display: flex;
-
-}
-
-/* Відступ між іконками Log in і Cart */
-.conteinar__velcom--1 {
+    justify-content: center;
+    align-items:end;
     margin-left: 20px;
+    margin-right: 5px;
+    gap: 10px;
+    padding-top: 5px;
+}
+.velcom a {
+    font-family: var(--family-DM-sans);
+    font-size: var(--font-size-18);
+    line-height: 28.01px;
 }
 
-.conteinar__velcom--1 i {
+.velcom i {
+    font-size: var(--font-size-30);
+    margin-left: 10px;
     margin-right: 5px;
+    padding-top: 15px;
+
 }
 
 /* пстиль посилання */
 .conteinar a{
-    font-weight: 400;
-    font-size: 16px;
+    font-size: var(--font-size-16);
+    text-align: end;
     line-height: 42.8px;
-    color:rgba(0, 0, 0, 1);
-}
-/* Іконка вхід */
+    
 
-.conteinar__velcom--1 a{
-    color:rgba(0, 0, 0, 1);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28.01px;
-}
-
-.conteinar__velcom--1 i{
-   font-size: 40px;
 }
 
 /* секція-1 */
 .section {
     display: flex;
-    justify-content: space-between;
-    /* Розподіляє текст і картинку */
+    justify-content:center;
     align-items: center;
     margin: 0 auto;
     padding: 27px 20px;
     background-color: rgba(255, 195, 160, 1);
+
 }
 
-.section__heder{
-    width: 462px;
-    height: 563.78px;
+.section__heder{display: block;
+max-width: 462px;
+    min-height: 563.78px;
    
 }
 
-.section__heder h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 76px;
+.section__heder h2 {
+    font-family:var(--family-Roboto);
+    font-size: var(--font-size-76);
     line-height: 90px;
-    color: rgba(0, 0, 0, 1);
     margin-top: 30px;
 }
 
-.section__heder h2 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 78px;
+.section__heder--h2 {
+    font-family: var(--family-Roboto);
+    font-size: var(--font-size-78);
     line-height: 90px;
-    color: rgba(0, 0, 0, 1);
 }
-
 .section__heder p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-family:var(--family-DM-sans);
+    font-size: var(--font-size-18);
     line-height: 28px;
-    color: rgba(0, 0, 0, 1);
     margin-top: 33px;
-}
-
-.button2 {
-    width: 310px;
-    height: 58px;
-    border-radius: 25px;
-    border: 1px solid rgba(0, 0, 0, 1);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 34px;
-    color: rgba(0, 0, 0, 1);
-    background: none;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
-
-.button2:hover {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
 }
 
 /* Картинка */
 
 .img {
-    max-width:897.59px;
-    max-height: 563.78px;
+    height: auto;
+        object-fit: cover;
+        /* display: block; */
+    width: 897.59px;
+    min-width:433.78px ;
+    height: 563.78px;
 }
 
 
@@ -254,15 +298,12 @@ transition: all 0.3s ease;
     display: flex;
     flex-direction:column;
     align-items: center;
-    height: 657px;
-    background: #F5EDE7;
+    min-height: 657px;
 }
 .section2 h2{
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 43px;
+  font-family: var(--family-Roboto);
+  font-size: var(--font-size-43);
   line-height: 60.01px;
-  color: rgba(0, 0, 0, 1);  
   margin-top: 72px;
 
 }
@@ -284,7 +325,7 @@ transition: all 0.3s ease;
 .section2__menu--1 {
     width: 100%;
     max-width: 334px;
-    height: 251px;
+    min-height: 251px;
     justify-content: center;
     align-items: center;
 text-align: center;
@@ -293,42 +334,26 @@ margin-top: 38px;
 }
 
 .section2__menu--1 h3{
-    font-family: 'Roboto';
-        font-weight: 400;
-        font-size: 27px;
+    font-family: var(--family-Roboto);
+        font-size: var(--font-size-27);
         line-height: 36px;
-        color: rgba(0, 0, 0, 1);
         margin-top: 12px;
 }
 .section2__menu--1 p {
-    font-family: 'DM Sans';
-    font-weight: 400;
-    font-size: 18px;
+    font-family: var(--family-DM-sans);
+    font-size: var(--font-size-18);
     line-height: 28.01px;
-    color: rgba(0, 0, 0, 1);
     margin-top: 5px;
 }
-/* Кнопка секція 2 */
 
-.button3{
-    width: 100%;
-    max-width: 310px;
+.button--shop-blu {
+    min-width: 310px;
     height: 58px;
-    font-family: 'Roboto';
-    font-size: 22px;
-    line-height: 34px;
-    border-radius: 35px;
-    border: 1px rgba(1, 38, 222, 1) solid;
-    background: none;
-    transform: transition(0.3s );
+    padding-left: 10px;
+    border: 1px solid rgba(1, 38, 222, 1);
     margin-top: 67px;
+    color: rgba(1, 38, 222, 1);
 }
-
-.button3:hover{
-    background-color:rgba(0, 0, 0, 0.5);
-    color: #F5EDE7;
-}
-
 /* секція 3 */
 
 
@@ -347,292 +372,265 @@ margin-top: 38px;
     margin-top: 65px;
 }
 
-.section__img {
-    width: 100%;
+.section__img img{
     max-width: 680px;
-    max-height: 529px;
+    min-height: 529px;
     border-radius: 20px;
     margin-top: 62px;
     margin-left: 12px;
 }
 
 .section__fres h3 {
-    font-family: 'Roboto';
-font-weight: 400;
-font-size: 40px;
+    font-family:var(--family-Roboto);
+font-size: var(--font-size-40);
 line-height: 56.02px;
 color: rgba(0, 0, 1);
 }
 
-.section__fres__btn--btn{
-    width: 100%;
-        max-width: 310px;
-        height: 58px;
-        font-family: 'Roboto';
-        font-size: 22px;
-        line-height: 34px;
-        border-radius: 35px;
-        border: 1px rgba(1, 38, 222, 1) solid;
-        background: none;
-        transform: translate(0.3s);
-        margin-top: 25px;
-    }
-    
-    .section__fres__btn--btn:hover {
-        background-color: rgba(0, 0, 0, 0.5);
-        color: #F5EDE7;
-    }
 
     /* Секція 4 */
-
+        .section-4 {
+            max-width: 1200px;
+            margin: 0 auto 70px auto;
+            padding: 0 15px;
+        }
+    
         .section-4 h3 {
             text-align: center;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 39px;
+            font-family: var(--family-Roboto);
+            font-size: var(--font-size-39);
             line-height: 56.02px;
-            color: rgba(0, 0, 0, 1);
             margin-top: 146px;
         }
     
         .section-4__grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            /* Оптимізовано */
-            grid-template-rows: repeat(2, 1fr);
             gap: 20px;
-          
-            margin: 30px 15px 0;
+            margin-top: 30px;
+            width: 100%;
         }
     
-        .section-4__grid__bloc--img {
+        .section-4__grid__blocc {
             width: 100%;
             max-width: 453px;
-            height: auto;
+            height: 453px;
             border-radius: 20px;
+            overflow: hidden;
+        }
+    
+        .section-4__grid__blocc img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     
         .section-4__grid__bloc h4 {
-            display: flex;
-            flex-direction: column;
-            /* Текст в колонку */
-            align-items:start;
-            
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 27px;
+            font-family: var(--family-Roboto);
+            font-size: var(--font-size-27);
             line-height: 36px;
-            color: rgba(0, 0, 0, 1);
             margin-top: 7px;
         }
     
         .section-4__grid__bloc p {
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 400;
-            font-size: 20px;
+            font-family: var(--family-DM-sans);
+            font-size: var(--font-size-20);
             line-height: 28px;
-            color: rgba(0, 0, 0, 1);
-        margin-top: -10px;
+            margin-top: -10px;
         }
     
-        .section-4__grid__bloc--btn {
+        /* Кнопка */
+        .button--add {
             width: 100%;
-                max-width: 257px;
+            max-width: 257px;
             height: 58px;
-            border-radius: 35px;
-            border: 1px solid rgba(1, 38, 222, 1);
-            cursor: pointer;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 400;
-            font-size: 22px;
             margin-top: 10px;
             line-height: 34px;
             color: rgba(1, 38, 222, 1);
-            transition: all 0.3s ease;
+            border: 1px solid rgba(1, 38, 222, 1);
+            text-align: center;
         }
     
-        .section-4__grid__bloc--btn:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #F5EDE7;
-            border-color: #000;
-        }
+        
+    
 
         /* Секція5 */
+           .bacraund-wit{
+            background:white;
+            padding-top: 70px;
+           }
 
-       .section5 {
-    margin-top: 143px;
-}
+           .section5__img {
+               width: 100%;
+               max-width: 1440px;
+               margin: 0 auto;
+               display: flex;
+               justify-content: center;
+           }
+    
+           .section5__img img {
+               width: 100%;
+               max-width: 1440px;
+               height: auto;
+               object-fit: cover;
+               display: block;
+           }
+    
+           .section5 {
+               background: rgba(245, 237, 231, 1);
+               max-width: 1440px;
+               margin: 0 auto;
+               padding: 20px;
+           }
 
-.section5__img {
-    width: 100%;
-    max-width: 1440px;
-}
 
 .flex {
-    display: flex;
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    /* display: flex;
     justify-content: center;
-    align-items: flex-start; /* Вирівнювання по верхньому краю */
+    align-items: flex-start; Вирівнювання по верхньому краю */
     gap: 20px; /* Відстань між блоками */
      /* Адаптиflex-wrap: wrap;вність для мобільних */
-}
+    }
 
 .flex__section5__img {
-    width: 100%;
+    display: flex;
+        flex-direction: column;
+        height: 100%;
     max-width: 459px;
-    height: 630px;;
+    min-height: 630px;;
     border-radius: 20px;
     border: 1px solid rgba(0, 0, 0, 1);
     padding: 15px; /* Додає відступ всередині */
     padding-bottom: 50px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0 auto;
 }
 
 .flex__section5__img img {
-    width: 100%;
+    
     max-width: 409px;
-    height: auto;
-    max-height: 272px;
+ height: 272px;
+height: auto;
     object-fit: cover;
     display: block;
-    margin: 0 auto;
 }
 
 .flex__section5__img h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 54px;
+    font-family: var(--family-Roboto);
+    font-size: var(--font-size-54);
     line-height: 68.55px;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
     margin-top: 18px;
 }
 
 .flex__section5__img p {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
+    font-family:var(--family-DM-sans);
+    font-size: var(--font-size-18);
     line-height: 28.01px;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
     margin-top: 20px;
     word-spacing: 3px;
 }
 
 /* Cекція 6 */
-.border-3{
-    background: none;
+.border-3 {
     padding-left: 16px;
     padding-right: 16px;
+    position: relative;
+    overflow: hidden;
+    min-height: 982px;
 }
 
-.section-6-background {
-    width: 100%;
-    max-width: 1408px;
-    padding-top: 10px;
-    padding-bottom: 17px;
-    background-color: rgba(245, 237, 231, 1);
-    position: relative;
+.conteqyth-6{
+background-color:rgba(245, 237, 231, 1);
+display: flex;
+gap: 35px;
+padding-top: 30px;
 }
 
-.section-6-background__block1__img {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 42px;
-    margin-top: 20px;
-    position: relative;
+.conteqyth-6 h5 {
+font-family: var(--family-DM-sans);
+font-size: var(--font-size-16);
+line-height: 24px;
+letter-spacing: 0%;
+text-transform: uppercase;
+padding-bottom: 50px;
+position: relative;
     z-index: 2;
 }
+.conteiner-6-tex h5 {
+    padding-top: 30px;
+}
 
-.section-6-background__block1__img--texst{
+/* загальні властивості <p>в секції6  */
+.conteqyth-6 p {
+font-family:var(--family-Roboto);
+font-size: var(--font-size-26);
+line-height: 40.01px;
+letter-spacing: 0%;
+position: relative;
+    z-index: 2;
+}
+/* розмір шрифту для <p> в секції6/2 */
+.conteqyth-6__too p {
+    font-size: var(--font-size-30);
+}
+.conteqyth-6__too{
+    padding-bottom: 15px;
+}
+/* розміри для котейнерів 6/1 та 6/2 */
+.conttiner-6-img, .conteiner-6-tex{
     width: 100%;
     max-width: 516px;
-    justify-content: left;
+    min-height: 386px; 
+    justify-content: center;
+    /* align-content: center; */
+     
 }
 
-.section-6-background__block1__img--texst h5 {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 1);
-    padding-right: 20px;
-    margin-top: 48px;
-    position: relative;
-    z-index: 4;
-}
 
-.section-6-background__block1__img--texst p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 40px;
-    margin-top: 25px;
-}
-
-/* Кнопка */
-.section-6-background__block1__btn {
+.conteiner-6-tex--too, .conttiner-6-img{
     width: 100%;
-    max-width: 256px;
-    height: 58px;
-    background: none;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-radius: 35px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 34px;
-    text-align: center;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-}
+max-width: 516px;
+min-height: 516px;
+justify-content: center;
+align-content: center;
 
-.section-6-background__block1__btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #F5EDE7;
-}
-
-.marc .section-6-background__block1__img--text {
-    margin-top: 115px;
-}
-
-.marc .section-6-background__block1__img--text p {
-    font-size: 30px;
-    margin-right: 10px;
-    padding-bottom: 5px;
-}
-
-.section-6-background__block1__img--img1 {
-    width: 100%;
-    max-width: 516px;
-    margin-top: 20px;
-}
-
-.border-2 {
-    background: rgba(245, 237, 231, 1);
 }
 
 .san {
+    margin-right: auto;
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
     max-width: 400px;
-    margin-top: 15px;
-    margin-right: 50px;
+    max-height: 400px;
     z-index: 1;
 }
 
-.san1 {
-    position: absolute;
-    bottom: 0;
-    left: 43%;
-    width: 100%;
-    max-width: 400px;
-    z-index: 2;
+.san__top {
+    margin: auto;
+    top: 0;
+    right: 10%;
+    left: auto;
+    transform: none;
+    z-index: 1;
 }
+
+.san__down {
+    bottom: 0;
+margin-left: 180px;
+}
+/* Кнопка */
+.button.button--read {
+    position: relative;
+    z-index: 2;
+    min-width: 256px;
+    height: 58px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-top: 20px;
+}
+
 /* Секція 7 */
 .section7 {
 width: 100%;
@@ -640,19 +638,21 @@ width: 100%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    /* Забирає горизонтальний скролбар */
+    font-family: var(--family-Roboto);
+        font-size: var(--font-size-43);
+        line-height: 60.01px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 80px;
 }
 
 .section7__flex {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* Однаковий відступ між зображеннями */
     cursor: grab;
     overflow-x: hidden;
-    /* Повністю приховуємо скролбар */
     user-select: none;
-    /* Забороняє виділення тексту під час прокручування */
     margin-top: 15px;
 }
 
@@ -663,25 +663,15 @@ width: 100%;
 .section7__flex__img {
     width: 100%;
     max-width: 336px;
+    height: 336px;
     flex-shrink: 0;
-    /* Щоб зображення не зменшувались */
-    position: relative;
 }
 
 .section7__flex__img img {
-    border-radius: 20px;
-    width: 100%;
+        border-radius: 20px;
 }
 
-.section7 {
-    font-family: Roboto;
-        font-weight: 400;
-        font-size: 43px;
-        line-height: 60.01px;
-        letter-spacing: 0%;
-        text-align: center;
-        margin-top: 80px;
-}
+
 
 /* секція 8 */
 .section-8 {
@@ -689,100 +679,75 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(245, 237, 231, 1);
     padding: 50px 0;
     text-align: center;
     margin-top: 20px;
 }
 
 .section-8 h2 {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 50px;
+    font-family:var(--family-Roboto);
+    font-size: var(--font-size-50);
     line-height: 72px;
 }
 
 .section-8 h4 {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 31px;
+    font-family: var(--family-Roboto);
+    font-size: var(--font-size-31);
     line-height: 44px;
     margin-top: 15px;
 }
 
-.section-8 button {
+.button__poshta {
     width: 100%;
-        max-width: 480px;
+    max-width: 480px;
     height: 58px;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 1);
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 17px;
+    font-size: var(--font-size-17);
     text-align: center;
-    /* горизонтальне вирівнювання */
     line-height: 58px;
-    /* вертикальне вирівнювання */
     background-color: white;
-    cursor: pointer;
     margin-top: 20px;
 }
 
-.section-8 button:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #F5EDE7;
-}
-
-
-
 /* ЗЕ ЕНД)))) */
 
-.footer{
+.footer2{
+    background-color: rgba(245, 237, 231, 1);
     display: flex;
 justify-content: space-between;
-    background-color: rgba(245, 237, 231, 1);
 padding-top: 46px;
-    margin-right: 75px;;
-}
-.footer__contunt1-img {
-    width: 100%;
-        max-width: 144px;
-    height: 57px;
+    padding-right: 75px;
 }
 
-.footer__contunt1 h5{
-    font-family: Roboto;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 36.02px;
-        margin-bottom: 20px;
-        
-}
-
-.footer__contunt1 p{
-    font-family: DM Sans;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0%;
-        
-}
-
-.footer__contunt1 a {
-    font-family: Roboto;
-        font-weight: 400;
-        font-size: 23px;
+.footer--post h5 {
+    font-family: var(--family-Roboto);
+        font-size: var(--font-size-22);
         line-height: 36.02px;
         letter-spacing: 0%;
 }
+.footer--post a {
+    font-family: var(--family-DM-sans);
+    font-size: var(--font-size-16);
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
 
-.footer__contunt1--i{
+}
+.footer-contunt1--i{
     width: 100%;
         max-width: 191.9375;
         height: 32;
         top: 59.98px;
 
 }
- .bacraund-futer{
-    background-color: rgba(245, 237, 231, 1);
- }
+.Bbagraund--end{
+font-family: var(--family-DM-sans);
+    font-size: var(--font-size-14px);
+    line-height: 24px;
+    letter-spacing: 0%;
+     padding-top: 150px;
+    padding-left: 50px; 
+    
+}
+
